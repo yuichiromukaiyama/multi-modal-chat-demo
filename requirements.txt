@@ -1,0 +1,4 @@
+openai
+black
+gradio
+python-dotenv

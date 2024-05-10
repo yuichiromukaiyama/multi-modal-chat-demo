@@ -39,6 +39,7 @@ def call(text: str, image: Optional[str] = None):
     else:
         completion = client.chat.completions.create(
             model=AZURE_OPENAI_DEPLOYMENT_NAME,
+            max_tokens=1000,
             messages=[
                 {
                     "role": "user",
